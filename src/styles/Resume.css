@@ -1,0 +1,194 @@
+:root {
+  --primary-dark: #2C3539;
+  --primary-accent: #E9967A;
+  --bg-light: #F8F8F8;
+  --bg-card: #FFFFFF;
+  --text-secondary: #6C757D;
+  --border-light: #E0E0E0;
+  --font-heading: 'Poppins', sans-serif;
+  --font-body: 'Lora', serif;
+}
+
+/* =================================================================== */
+/* 1. SECTION WRAPPER & HEADER (with Gradient)
+/* =================================================================== */
+.resume-section {
+  padding: 40px 20px;
+  /* UPDATED: Added soft gradient background */
+  background:  #F8F8F8;
+}
+
+.resume-header {
+  text-align: center;
+  margin-bottom: 60px;
+}
+.resume-header h2 {
+  font-family: var(--font-heading);
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: var(--primary-dark);
+  margin-bottom: 10px;
+}
+.resume-header p {
+  font-family: var(--font-body);
+  font-size: 1.1rem;
+  color: var(--text-secondary);
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+/* =================================================================== */
+/* 2. TIMELINE LAYOUT
+/* =================================================================== */
+.resume-timeline {
+  position: relative;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.resume-timeline::after {
+  content: '';
+  position: absolute;
+  width: 3px;
+  background-color: var(--border-light);
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  margin-left: -1.5px;
+}
+
+.timeline-item {
+  display: flex;
+  margin-bottom: 50px;
+  position: relative;
+}
+
+/* Title container (left side) */
+.timeline-title-container {
+  flex: 1;
+  padding-right: 50px;
+  text-align: right;
+  position: relative;
+}
+
+.timeline-title {
+  font-family: var(--font-heading);
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: var(--primary-dark);
+  /* NEW: Flexbox to align icon and text */
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 15px;
+}
+
+/* NEW: Icon styling */
+.timeline-icon {
+  color: var(--primary-accent);
+  font-size: 1.8rem;
+}
+
+.timeline-title-container::after {
+  content: '';
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  right: -8px;
+  background-color: var(--bg-card);
+  border: 4px solid var(--primary-accent);
+  top: 10px; /* Adjusted vertical alignment */
+  border-radius: 50%;
+  z-index: 1;
+}
+
+/* Content container (right side with border accent) */
+.timeline-content-container {
+  flex: 1;
+  padding-left: 50px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  /* UPDATED: Added border accent */
+  border-left: 3px solid var(--primary-accent);
+  padding-left: 48.5px; /* Aligns the border with the central line */
+}
+
+/* =================================================================== */
+/* 3. CONTENT CARDS (with Animation)
+/* =================================================================== */
+.timeline-card {
+  background: var(--bg-card);
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 5px 25px rgba(0, 0, 0, 0.07);
+  /* UPDATED: Animation properties */
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+/* UPDATED: The class that triggers the animation */
+.timeline-card.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.timeline-card:hover {
+  transform: translateY(-5px) scale(1.02); /* Combined hover effect */
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.timeline-date {
+  display: block;
+  font-family: var(--font-heading);
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: var(--primary-accent);
+  margin-bottom: 10px;
+}
+
+.timeline-card h4 {
+  font-family: var(--font-heading);
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: var(--primary-dark);
+  margin-bottom: 5px;
+}
+
+.timeline-card p {
+  font-family: var(--font-body);
+  font-size: 1rem;
+  color: var(--text-secondary);
+  line-height: 1.6;
+  margin: 0;
+}
+
+/* =================================================================== */
+/* 4. RESPONSIVE DESIGN
+/* =================================================================== */
+@media screen and (max-width: 768px) {
+  .resume-timeline::after {
+    left: 20px;
+  }
+  .timeline-item {
+    flex-direction: column;
+  }
+  .timeline-title-container {
+    text-align: left;
+    padding-left: 50px;
+    padding-right: 0;
+    margin-bottom: 20px;
+    justify-content: flex-start;
+  }
+  .timeline-title {
+    justify-content: flex-start;
+  }
+  .timeline-title-container::after {
+    left: 12px;
+  }
+  .timeline-content-container {
+    padding-left: 50px;
+    border-left: 3px solid var(--primary-accent); /* Keep border on mobile */
+  }
+}

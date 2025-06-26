@@ -1,0 +1,153 @@
+.skills-section {
+  padding-top:0px;
+    padding-right: 20px;
+    padding-bottom: 60px;
+    padding-left: 20px;
+  font-family: 'Poppins', sans-serif;
+  margin: 0 130px; /* Large side margins for desktop */
+}
+
+.skills-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.skills-header {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.skills-title {
+  font-size: 2rem; /* Desktop font size */
+  font-weight: 600;
+}
+
+.skills-description {
+  color: #555;
+  font-size: 1rem; /* Desktop font size */
+  margin-top: 8px;
+}
+
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.skill-card {
+  border: 1px solid rgb(167, 160, 160);
+  border-radius: 12px;
+  padding: 16px;
+  text-align: center;
+  transition: transform 0.3s;
+}
+
+.skill-card:hover {
+  transform: translateY(-5px);
+  border-color: black;
+  box-shadow: 10px 10px 5px lightblue;
+}
+
+.skill-image-container {
+  height: 80px;
+  width: 100px;
+  margin: 0 auto 12px;
+  overflow: hidden;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.skill-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.skill-title {
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+.skill-description {
+  font-size: 0.9rem;
+  color: #666;
+  margin: 10px 0;
+}
+/* Tablet and below (≤768px) */
+@media (max-width: 768px) {
+  .skills-section {
+    margin: 0 20px;
+    padding: 30px 15px;
+    border-radius: 20px;
+  }
+
+  .skills-title {
+    font-size: 1.7rem;
+  }
+
+  .skills-description {
+    font-size: 0.95rem;
+  }
+
+  .skill-title {
+    font-size: 1rem;
+  }
+
+  .skill-description {
+    font-size: 0.85rem;
+  }
+}
+
+/* Mobile (≤576px) */
+@media (max-width: 576px) {
+  .skills-section {
+    margin: 0 5px;
+    padding: 25px 3px;
+    border-radius: 15px;
+  }
+
+  .skills-container {
+    padding: 0 5px;
+  }
+
+  .skills-title {
+    font-size: 1.5rem;
+  }
+
+  .skills-description {
+    font-size: 0.9rem;
+  }
+
+.skills-grid {
+  grid-template-columns: repeat(2, 1fr); /* 2 cards per row */
+  gap: 12px;
+}
+
+
+  .skill-card {
+    padding: 14px;
+    max-width: 250px;
+  }
+/* Simulate hover on mobile (tap) */
+.skill-card:active,
+.skill-card:focus {
+  transform: translateY(-5px);
+  border-color: black;
+  box-shadow: 10px 10px 5px lightblue;
+}
+.skill-card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+  touch-action: manipulation; /* improves tap performance */
+}
+
+  .skill-title {
+    font-size: 0.95rem;
+  }
+
+  .skill-description {
+    font-size: 0.8rem;
+  }
+}
