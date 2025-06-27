@@ -43,7 +43,7 @@ const Resume = () => {
 
   return (
     <div>
-    <section id="resume" className="resume-section">
+    <section id="Resume" className="resume-section">
       <div className="resume-header">
         <h2>My Resume</h2>
         <p>A summary of my academic and professional journey.</p>

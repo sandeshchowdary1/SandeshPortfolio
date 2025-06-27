@@ -29,11 +29,10 @@ const Home = () => {
         </div>
         
         <div className="home1-nav-links">
-          {['ABOUT', 'RESUME', 'PROJECTS','CONTACT ME'].map((item) => (
-            <a key={item} className="home1-nav-link" href={`#${item.toLowerCase()}`}>
-              {item}
-            </a>
-          ))}
+          <a className="home1-nav-link" href="#Home">About</a>
+          <a className="home1-nav-link" href="#Resume">Resume</a>
+    <a  className="home1-nav-link" href="#Projects">Projects</a>
+    <a  className="home1-nav-link"  href="#Contact">Contact</a>
         </div>
       </nav>
 

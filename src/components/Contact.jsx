@@ -106,7 +106,7 @@ const Contact = () => {
   };
 
   return (
-    <div className="Openingpage-container">
+    <div id='Contact' className="Openingpage-container">
       <div className="panda">
         <div className="ear"></div>
         <div className="face">

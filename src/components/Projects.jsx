@@ -5,32 +5,8 @@ import Salesprediction from '../images/salesprediction.png';
 import Portfolio from '../images/SandeshPortfoliohome.png';  
 
 const Projects = () => {
-  const projects = [
-    {
-      id: 1,
-      title: "Yukti Veda Club",
-      category: "Full Stack Project",
-      description: "An intuitive platform for managing tech events, startup ideas, and student innovation.",
-      image: Yuktiveda,
-    },
-    {
-      id: 2,
-      title: "Sales prediction App",
-      category: "Machine Learning",
-      description: "A data-driven app for forecasting product sales and optimizing business decisions.",
-      image: Salesprediction,
-    },
-    {
-      id: 3,
-      title: "My Portfolio",
-      category: "Portfolio",
-      description: "A personal portfolio showcasing my projects, skills, and journey as a developer and data analyst.",
-      image: Portfolio,
-    }
-  ];
-
   return (
-    <section className="works-section">
+    <section id='Projects' className="works-section">
       <div className="works-container">
         <div className="works-header">
           <h2 className="works-title">Works & Projects</h2>
@@ -41,21 +17,65 @@ const Projects = () => {
         </div>
 
         <div className="projects-grid">
-          {projects.map((project) => (
-            <div key={project.id} className="project-card">
-              <div className="project-image-container">
-                <img src={project.image} alt={project.title} className="project-image" />
-              </div>
 
-              <h3 className="project-title">{project.title}</h3>
-              <p className="project-description">{project.description}</p>
-
-              <div className="project-buttons">
-                <button className="project-btn b1">Demo</button>
-                <button className="project-btn b2">Source</button>
-              </div>
+          {/* Project 1: Yukti Veda */}
+          <div className="project-card">
+            <div className="project-image-container">
+              <img src={Yuktiveda} alt="Yukti Veda Club" className="project-image" />
             </div>
-          ))}
+            <h3 className="project-title">Yukti Veda Club</h3>
+            <p className="project-description">
+              An intuitive platform for managing tech events, startup ideas, and student innovation.
+            </p>
+            <div className="project-buttons">
+              <a href="https://yuktivedaclub.vercel.app" target="_blank" rel="noopener noreferrer">
+                <button className="project-btn b1">Demo</button>
+              </a>
+                <a href="https://github.com/sandeshchowdary1/YuktiVedaClub" target="_blank" rel="noopener noreferrer">
+               <button className="project-btn b2">Source</button>
+               </a>
+             
+            </div>
+          </div>
+
+          {/* Project 2: Sales Prediction App */}
+          <div className="project-card">
+            <div className="project-image-container">
+              <img src={Salesprediction} alt="Sales prediction App" className="project-image" />
+            </div>
+            <h3 className="project-title">Sales prediction App</h3>
+            <p className="project-description">
+              A data-driven app for forecasting product sales and optimizing business decisions.
+            </p>
+            <div className="project-buttons">
+              <a href="https://yuktivedaclub.vercel.app" target="_blank" rel="noopener noreferrer">
+                <button className="project-btn b1">Demo</button>
+              </a>
+                <a href="https://yuktivedaclub.vercel.app" target="_blank" rel="noopener noreferrer">
+               <button className="project-btn b2">Source</button>
+               </a>
+            </div>
+          </div>
+
+          {/* Project 3: Portfolio */}
+          <div className="project-card">
+            <div className="project-image-container">
+              <img src={Portfolio} alt="My Portfolio" className="project-image" />
+            </div>
+            <h3 className="project-title">My Portfolio</h3>
+            <p className="project-description">
+              A personal portfolio showcasing my projects, skills, and journey as a developer and data analyst.
+            </p>
+            <div className="project-buttons">
+              <a href="https://yuktivedaclub.vercel.app" target="_blank" rel="noopener noreferrer">
+                <button className="project-btn b1">Demo</button>
+              </a>
+                <a href="https://github.com/sandeshchowdary1/SandeshPortfolio" target="_blank" rel="noopener noreferrer">
+               <button className="project-btn b2">Source</button>
+               </a>
+            </div>
+          </div>
+
         </div>
       </div>
     </section>
