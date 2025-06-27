@@ -67,7 +67,7 @@ const Projects = () => {
               A personal portfolio showcasing my projects, skills, and journey as a developer and data analyst.
             </p>
             <div className="project-buttons">
-              <a href="https://yuktivedaclub.vercel.app" target="_blank" rel="noopener noreferrer">
+              <a href="https://narrasandeshportfolio.vercel.app/" target="_self" rel="noopener noreferrer">
                 <button className="project-btn b1">Demo</button>
               </a>
                 <a href="https://github.com/sandeshchowdary1/SandeshPortfolio" target="_blank" rel="noopener noreferrer">
