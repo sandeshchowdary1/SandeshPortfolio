@@ -13,8 +13,7 @@
 /* 1. SECTION WRAPPER & HEADER (with Gradient)
 /* =================================================================== */
 .resume-section {
-  padding: 40px 20px;
-  /* UPDATED: Added soft gradient background */
+  padding: 40px 20px 40px 20px;
   background:  #F8F8F8;
 }
 

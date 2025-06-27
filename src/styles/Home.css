@@ -32,7 +32,7 @@
 .home1-content-wrapper {
   display: flex;
   max-width: 1200px;
-    margin: 10px auto 0;
+    margin: 10px auto 40px; 
   column-gap: 40px;
 }
 
@@ -185,10 +185,11 @@
 }
 
 .home1-heading-line {
-  font-size: 2.8rem;
-  line-height: 1.2; /* Increased for better spacing */
-  margin-bottom: 5px;
-  font-weight: 700;
+  font-size: 2.6rem;
+  line-height: 1.4;
+  letter-spacing: 0.5px;
+  font-weight: 600;
+  text-transform: capitalize; /* Optional: use 'none' or 'capitalize' for readability */
 }
 
 .home1-bold {
@@ -197,11 +198,12 @@
 }
 
 .home1-outline {
-  font-weight: 800;
-  color: transparent;
-  -webkit-text-stroke: 1.5px var(--primary-dark); /* UPDATED */
-  text-stroke: 1.5px var(--primary-dark);
+  font-weight: 700;
+  color: var(--bg-color); /* Shows if text-stroke isn’t supported */
+  -webkit-text-stroke: 1.2px var(--primary-dark); 
+  letter-spacing: 0.8px;
 }
+
 
 .home1-status {
   display: flex;
@@ -270,6 +272,7 @@
   .home1-content-wrapper {
     flex-direction: column;
     margin-top: 30px;
+    margin-bottom: 30px;
   }
   .home1-sidebar {
     margin-bottom: 40px;

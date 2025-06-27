@@ -1,20 +1,10 @@
-import React, { useState } from 'react';
+import React from 'react';
 import '../styles/Projects.css';
 import Yuktiveda from '../images/Yuktivedahome.png'; 
 import Salesprediction from '../images/salesprediction.png';
 import Portfolio from '../images/SandeshPortfoliohome.png';  
+
 const Projects = () => {
-  const [activeFilter, setActiveFilter] = useState('all');
-
-  const filters = ['all', 'design', 'branding', 'marketing', 'game'];
-  const filterLabels = {
-    'all': 'Show All',
-    'design': 'Design',
-    'branding': 'Branding',
-    'marketing': 'Marketing',
-    'game': 'Game'
-  };
-
   const projects = [
     {
       id: 1,
@@ -36,33 +26,8 @@ const Projects = () => {
       category: "Portfolio",
       description: "A personal portfolio showcasing my projects, skills, and journey as a developer and data analyst.",
       image: Portfolio,
-    },
-    // {
-    //   id: 4,
-    //   title: "Game UI Design",
-    //   category: "game",
-    //   description: "Futuristic game HUD with animated health bars and score zones.",
-    //   image: Yuktiveda,
-    // },
-    // {
-    //   id: 5,
-    //   title: "Marketing Campaign",
-    //   category: "marketing",
-    //   description: "Landing page + A/B tests for a subscription service.",
-    //   image: Yuktiveda,
-    // },
-    // {
-    //   id: 6,
-    //   title: "Brand Identity",
-    //   category: "branding",
-    //   description: "Typography, logo, and color scheme for a tech startup.",
-    //   image:Yuktiveda,
-    // },
+    }
   ];
-
-  const filteredProjects = activeFilter === 'all'
-    ? projects
-    : projects.filter((project) => project.category === activeFilter);
 
   return (
     <section className="works-section">
@@ -73,22 +38,10 @@ const Projects = () => {
             Check out some of my design projects, meticulously crafted with love and dedication,
             each one reflecting the passion and soul I poured into every detail.
           </p>
-
-          <div className="works-filters">
-            {filters.map((filter) => (
-              <button
-                key={filter}
-                className={`filter-btn ${activeFilter === filter ? 'active' : ''}`}
-                onClick={() => setActiveFilter(filter)}
-              >
-                {filterLabels[filter]}
-              </button>
-            ))}
-          </div>
         </div>
 
         <div className="projects-grid">
-          {filteredProjects.map((project) => (
+          {projects.map((project) => (
             <div key={project.id} className="project-card">
               <div className="project-image-container">
                 <img src={project.image} alt={project.title} className="project-image" />
