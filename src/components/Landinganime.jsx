@@ -15,7 +15,7 @@ const Openingpage = () => {
     // Navigate after animation completes (total 3s)
     const navigateTimer = setTimeout(() => {
       // sessionStorage.setItem('opening_shown', 'true');
-      navigate('/home');
+      navigate('/Home');
     }, 3000);
 
     return () => {

@@ -8,6 +8,8 @@ import { FaLinkedin, FaGithub, FaInstagram } from "react-icons/fa";
 import Resume from './Resume';
 import Projects from './Projects';
 import Contact from './Contact';
+import Footer from './Footer';
+import Navbar from './Navbar';
 const Home = () => {
   // This function for downloading the CV should now be correct from our last fix.
   const handleDownloadCV = () => {
@@ -22,20 +24,7 @@ const Home = () => {
 
   return (
     <div className="home1-container">
-      <nav className="home1-navbar">
-        {/* 2. REPLACE THE "NSC" TEXT WITH YOUR IMAGE TAG */}
-        <div className="home1-logo">
-          <img src={logoImage} alt="NSC Logo" />
-        </div>
-        
-        <div className="home1-nav-links">
-          <a className="home1-nav-link" href="#Home">About</a>
-          <a className="home1-nav-link" href="#Resume">Resume</a>
-    <a  className="home1-nav-link" href="#Projects">Projects</a>
-    <a  className="home1-nav-link"  href="#Contact">Contact</a>
-        </div>
-      </nav>
-
+      <Navbar/>
       <div className="home1-content-wrapper">
         <div className="home1-sidebar">
           <div className="home1-profile-circle">
