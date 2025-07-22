@@ -2,7 +2,7 @@ import React from 'react';
 import '../styles/Projects.css';
 import Yuktiveda from '../images/Yuktivedahome.png'; 
 import Salesprediction from '../images/salesprediction.png';
-import Portfolio from '../images/SandeshPortfoliohome.png';  
+import Blink from '../images/BlinkFamilySalon.png';  
 
 const Projects = () => {
   return (
@@ -48,29 +48,26 @@ const Projects = () => {
               A data-driven app for forecasting product sales and optimizing business decisions.
             </p>
             <div className="project-buttons">
-              <a href="https://yuktivedaclub.vercel.app" target="_blank" rel="noopener noreferrer">
-                <button className="project-btn b1">Demo</button>
-              </a>
-                <a href="https://yuktivedaclub.vercel.app" target="_blank" rel="noopener noreferrer">
+                <a href="https://github.com/sandeshchowdary1/MLmodels/blob/main/Salespediction.ipynb" target="_blank" rel="noopener noreferrer">
                <button className="project-btn b2">Source</button>
                </a>
             </div>
           </div>
 
-          {/* Project 3: Portfolio */}
+          {/* Project 3: Blink */}
           <div className="project-card">
             <div className="project-image-container">
-              <img src={Portfolio} alt="My Portfolio" className="project-image" />
+              <img src={Blink} alt="Blink FAmily Salon" className="project-image" />
             </div>
-            <h3 className="project-title">My Portfolio</h3>
+            <h3 className="project-title">Blink Family Salon</h3>
             <p className="project-description">
-              A personal portfolio showcasing my projects, skills, and journey as a developer and data analyst.
+              A modern salon website designed to attract local clients with service highlights, gallery, WhatsApp booking, and SEO optimization.
             </p>
             <div className="project-buttons">
-              <a href="https://narrasandeshportfolio.vercel.app/" target="_self" rel="noopener noreferrer">
+              <a href="https://blinkfamilysalon.vercel.app/" target="_self" rel="noopener noreferrer">
                 <button className="project-btn b1">Demo</button>
               </a>
-                <a href="https://github.com/sandeshchowdary1/SandeshPortfolio" target="_blank" rel="noopener noreferrer">
+                <a href="https://github.com/sandeshchowdary1/BlinkFamilySalon" target="_blank" rel="noopener noreferrer">
                <button className="project-btn b2">Source</button>
                </a>
             </div>
