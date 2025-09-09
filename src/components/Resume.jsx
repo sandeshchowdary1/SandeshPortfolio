@@ -61,7 +61,7 @@ const Resume = () => {
             <div className="timeline-card" ref={(el) => cardsRef.current.push(el)}>
               <span className="timeline-date">2023 - 2027</span>
               <h4>Malla Reddy University, Hyderabad</h4>
-              <p>B.Tech – Computer Science (Data Science) | CGPA: 8.86 / 10</p>
+              <p>B.Tech – Computer Science (Data Science) | CGPA: 8.95 / 10</p>
             </div>
             <div className="timeline-card" ref={(el) => cardsRef.current.push(el)}>
               <span className="timeline-date">2021 - 2023</span>
@@ -86,7 +86,7 @@ const Resume = () => {
             <div className="timeline-card" ref={(el) => cardsRef.current.push(el)}>
               <span className="timeline-date">April 2025 - Present</span>
               <h4>President - Yukti Veda Club</h4>
-              <p>Malla Reddy University</p>
+              <p>Dept of Data Science - Malla Reddy University</p>
             </div>
           </div>
         </div>

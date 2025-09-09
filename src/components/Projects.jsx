@@ -3,7 +3,7 @@ import '../styles/Projects.css';
 import Yuktiveda from '../images/Yuktivedahome.png'; 
 import Salesprediction from '../images/salesprediction.png';
 import Blink from '../images/BlinkFamilySalon.png';  
-
+import GroomWell from '../images/GroomWellSalon.png';  
 const Projects = () => {
   return (
     <section id='Projects' className="works-section">
@@ -57,14 +57,14 @@ const Projects = () => {
           {/* Project 3: Blink */}
           <div className="project-card">
             <div className="project-image-container">
-              <img src={Blink} alt="Blink FAmily Salon" className="project-image" />
+              <img src={Blink} alt="Blink Family Salon" className="project-image" />
             </div>
             <h3 className="project-title">Blink Family Salon</h3>
             <p className="project-description">
-              A modern salon website designed to attract local clients with service highlights, gallery, WhatsApp booking, and SEO optimization.
+             <b>Freelance project : </b> Designed and developed a modern salon website to attract local clients, featuring service highlights, image gallery, WhatsApp booking integration, and SEO optimization.
             </p>
             <div className="project-buttons">
-              <a href="https://blinkfamilysalon.vercel.app/" target="_self" rel="noopener noreferrer">
+              <a href="https://blinkfamilysalon.in/" target="_self" rel="noopener noreferrer">
                 <button className="project-btn b1">Demo</button>
               </a>
                 <a href="https://github.com/sandeshchowdary1/BlinkFamilySalon" target="_blank" rel="noopener noreferrer">
@@ -72,7 +72,24 @@ const Projects = () => {
                </a>
             </div>
           </div>
-
+          {/* Project 4: Groomwell*/}
+          <div className="project-card">
+            <div className="project-image-container">
+              <img src={GroomWell} alt="GroomWell Salon" className="project-image" />
+            </div>
+            <h3 className="project-title">GroomWell Salon</h3>
+            <p className="project-description">
+             <b>Freelance project : </b>A women-focused beauty studio, to craft a modern website aimed at attracting local clients. The site features service highlights, a curated image gallery, WhatsApp booking integration, and SEO optimization for enhanced visibility.
+            </p>
+            <div className="project-buttons">
+              <a href="https://groomwellsalon.in/" target="_self" rel="noopener noreferrer">
+                <button className="project-btn b1">Demo</button>
+              </a>
+                <a href="https://github.com/sandeshchowdary1/GroomwellSalon" target="_blank" rel="noopener noreferrer">
+               <button className="project-btn b2">Source</button>
+               </a>
+            </div>
+          </div>
         </div>
       </div>
     </section>
